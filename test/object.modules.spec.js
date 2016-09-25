@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { each, getType, isType } from './../src/gaia';
+import { each, getType, isType, mixin } from './../src/gaia';
 
 describe('Gaia - Module Object', () => {
   describe('#each', () => {
@@ -92,6 +92,19 @@ describe('Gaia - Module Object', () => {
       expect(isType(Infinity, 'number')).to.equal(true);
       expect(isType(0, 'boolean')).to.equal(false);
       expect(isType(NaN, 'object')).to.equal(false);
+    });
+
+  });
+
+  describe('#mixin', () => {
+
+    it('should', () => {
+      let a = { a: 1 };
+      let b = { b: 2 }
+      let c = { c: 3 }
+      let d = mixin(a, b, c);
+
+      expect(d).to.deep.equal({ a: 1, b: 2, c: 3 });
     });
 
   });
