@@ -1,9 +1,9 @@
 import { toArray } from './function.modules';
 
-export const each = (obj, callback, scope) => {
+export const each = (obj, callback) => {
   Object.keys(obj).forEach((item) => {
     callback(obj[item], item, obj);
-  }, scope);
+  });
 };
 
 export const getType = value => Object.prototype.toString.call(value).replace(/\W/g, '').slice(6);
