@@ -1,5 +1,5 @@
 {
-  "name": "gaiajs",
+  "name": "GaiaJS",
   "version": "0.1.0",
   "description": "A small and useful library for javascript.",
   "main": "dist/gaia.js",
@@ -16,6 +16,10 @@
     "small",
     "GaiaJS"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcelohmdias/gaia-js"
+  },
   "author": "@marcelohmdias",
   "license": "MIT",
   "devDependencies": {
